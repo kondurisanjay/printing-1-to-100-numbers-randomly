@@ -1,0 +1,16 @@
+function generateUniqueNumbers() 
+{
+    let numbers = [];
+    while (numbers.length <= 100) 
+    {
+        let num = Math.trunc(Math.random() * 100) + 1;
+        
+        if (numbers.includes != (num)) 
+        {
+            numbers.push(num);
+        }
+    }
+    return numbers;
+}
+let shuffledNumbers = generateUniqueNumbers();
+console.log(shuffledNumbers.join(', '));
